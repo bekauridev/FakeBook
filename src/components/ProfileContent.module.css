@@ -1,0 +1,12 @@
+.content {
+  /* flex: 1; */
+  padding: 20px;
+  width: 800px;
+  background-color: rgb(105, 103, 103);
+  margin: 0 auto;
+  height: 600px;
+
+  overflow-x: hidden;
+
+  scrollbar-width: thin;
+}

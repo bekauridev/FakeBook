@@ -1,0 +1,130 @@
+.loader {
+  position: relative;
+  width: 470px;
+  height: 230px;
+  padding-inline: 20px;
+  padding-block: 20px 15px;
+
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: rgb(24, 26, 27);
+
+  cursor: pointer;
+  overflow: hidden;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.loader:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    110deg,
+    rgba(227, 227, 227, 0) 0%,
+    rgba(227, 227, 227, 0) 40%,
+    rgba(227, 227, 227, 0.5) 50%,
+    rgba(227, 227, 227, 0) 60%,
+    rgba(227, 227, 227, 0) 100%
+  );
+
+  animation: gradient-animation_2 1.2s linear infinite;
+}
+
+.loader .wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.loader .wrapper > div {
+  /* background-color: #cacaca; */
+  background-color: #333333;
+}
+
+.loader .circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.loader .button {
+  display: inline-block;
+  height: 32px;
+  width: 75px;
+}
+
+.loader .line1 {
+  position: absolute;
+  top: 11px;
+  top: 15px;
+  left: 58px;
+  left: 80px;
+  height: 12px;
+  width: 100px;
+}
+
+.loader .line2 {
+  position: absolute;
+  top: 34px;
+  top: 44px;
+  left: 58px;
+  left: 80px;
+  height: 12px;
+  width: 150px;
+}
+
+.loader .line3 {
+  position: absolute;
+  top: 57px;
+  top: 67px;
+  top: 87px;
+  left: 0px;
+  height: 12px;
+  width: 100%;
+}
+
+.loader .line4 {
+  position: absolute;
+  top: 80px;
+  top: 110px;
+  left: 0px;
+  height: 12px;
+  width: 92%;
+}
+
+.line5 {
+  position: absolute;
+  bottom: 50px;
+  left: 0px;
+  height: 12px;
+  width: 95%;
+}
+.line6 {
+  position: absolute;
+  bottom: 28px;
+  left: 0px;
+  height: 12px;
+  width: 80%;
+}
+
+@keyframes gradient-animation_2 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}

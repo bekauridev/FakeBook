@@ -1,0 +1,130 @@
+.postsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post {
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #2a2a2a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.postHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.postProfilePic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-secondary);
+}
+
+.postUserName {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.postContent {
+  margin-bottom: 16px;
+}
+
+.postTitle {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--color-secondary);
+}
+
+.postBody {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #d0d0d0;
+}
+
+.postFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+
+.reactions {
+  display: flex;
+  gap: 12px;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.likesIcon {
+  width: 20px;
+  height: 20px;
+}
+.likesNum {
+  font-size: 16px;
+  color: var(--color-secondary);
+  cursor: pointer;
+}
+
+.tags {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 14px;
+  color: var(--color-secondary);
+  background-color: #444;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.tag:hover {
+  background-color: #333;
+}
+.views {
+  font-size: 16px;
+  color: #d0d0d0;
+}
+
+.commentsButton {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-secondary);
+
+  background-color: #333;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.commentsButton:hover {
+  background-color: #444;
+}
+
+.commentsSection {
+  margin-top: 16px;
+  padding: 16px;
+  border-top: 1px solid #444;
+  background-color: #333;
+  border-radius: 12px;
+  color: #d0d0d0;
+}
+
+/* v2 */

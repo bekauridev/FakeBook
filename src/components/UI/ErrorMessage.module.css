@@ -1,0 +1,10 @@
+.Alert {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 10px;
+  width: fit-content;
+  color: #fff;
+  background-color: rgb(205, 26, 26);
+  z-index: 8888;
+}

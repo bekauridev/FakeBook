@@ -1,0 +1,108 @@
+/* styles.module.css */
+:root {
+  --welcome-page-background: #1f1f1f;
+}
+
+.welcomePageContainer {
+  position: relative;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--welcome-page-background);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  width: 25px;
+  height: 25;
+  /* font-size: 24px; */
+  /* font-weight: bold; */
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--color-secondary-light);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80dvh;
+  background: url("/path/to/your/background.jpg") center/cover no-repeat;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+.message {
+  position: absolute;
+  top: 115px;
+  right: 215px;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  transform: rotate(-10deg);
+}
+.message h5 {
+  font-size: 15px;
+}
+.arrowIcon {
+  width: 35px;
+  transform: rotate(40deg);
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+
+  padding: 10px 15px;
+}
+
+.feature {
+  flex: 1;
+  margin: 0 15px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--welcome-page-background);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.feature:hover {
+  transform: translateY(-10px);
+}
+.feature:hover .featureHeading {
+  color: var(--color-secondary-light);
+}
+
+.featureHeading {
+  font-size: 24px;
+  margin-bottom: 10px;
+  transition: color 0.2s ease;
+}
+
+.featureDescribe {
+  font-size: 16px;
+}

@@ -1,0 +1,33 @@
+.usersListContainer {
+  position: relative;
+}
+
+.searchedNum {
+  position: absolute;
+  top: -30px;
+  left: 150px;
+
+  font-size: 1.2rem;
+}
+.arrow {
+  font-size: 15px;
+}
+
+/* !!!!!!!!!!!!!!!!!! */
+
+.mySwiper {
+  width: 650px;
+  margin-top: 50px;
+}
+
+/* UsersList.module.css */
+:global(.swiper-button-prev),
+:global(.swiper-button-next) {
+  color: white !important;
+}
+
+:global(.swiper-slide) {
+  /* padding: 10px 150px 20px 10px; */
+  padding-inline: 90px;
+  /* width: ; */
+}

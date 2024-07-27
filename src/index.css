@@ -1,0 +1,85 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* COLORS  */
+  --color-primary: #242424;
+
+  --color-secondary: #4644d5;
+  --color-secondary-dark: #3d36c7;
+  --color-secondary-light: #a3b1ff;
+
+  --txt-color: #ffffff;
+  /* ==FONT */
+
+  /* --Size */
+  --df-btn: 15px;
+  /* --Weight */
+  --fw-b: 700;
+  --fw-lb: 500;
+  --fw-l: 500;
+
+  /* Transition */
+  --transition-dur: 0.2s;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  /* color: #535bf2; */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+html {
+  /* For later text adjusments */
+  font-size: 16px;
+}
+body {
+  height: 100%;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+:global(.row) {
+  display: flex;
+  background-color: red;
+}
+
+:global(div.swiper-button-perv::after) {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  right: 10px;
+  padding: 30px;
+  color: #000 !important;
+  fill: black !important;
+  stroke: black !important;
+}

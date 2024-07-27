@@ -1,0 +1,35 @@
+.navigation {
+  position: absolute;
+  top: 350px;
+  left: 40px;
+  /* border-bottom: 1px solid #ccc; */
+}
+.navigation ul {
+  list-style: none;
+}
+.navItem {
+  margin: 0 15px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.navItem:hover {
+  outline: 2px solid blue;
+}
+
+/* .navigation {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.navItem {
+  margin: 0 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.navItem:hover {
+  border-bottom: 2px solid blue;
+} */
